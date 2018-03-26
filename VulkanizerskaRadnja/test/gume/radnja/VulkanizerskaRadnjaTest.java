@@ -2,6 +2,8 @@ package gume.radnja;
 
 import static org.junit.Assert.*;
 
+import java.util.LinkedList;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -75,10 +77,11 @@ public class VulkanizerskaRadnjaTest {
 		radnja.dodajGumu(guma);
 		radnja.dodajGumu(guma2);
 		
-		assertEquals(2, radnja.pronadjiGumu(guma.getMarkaModel()).size());
-		assertEquals(guma, radnja.pronadjiGumu(guma.getMarkaModel()).get(1));
-		assertEquals(guma2, radnja.pronadjiGumu(guma.getMarkaModel()).get(0));
+		LinkedList<AutoGuma> gume = new LinkedList<AutoGuma>();
+		gume.add(guma);
+		gume.addFirst(guma2);
 		
+		assertTrue(radnja.pronadjiGumu(guma.getMarkaModel()).equals(gume));	
 	}
 	
 	@Test 
