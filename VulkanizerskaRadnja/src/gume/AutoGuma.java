@@ -38,7 +38,7 @@ public class AutoGuma {
 	
 	/**
 	 * Postavlja novu vrednost za naziv marke i modela gume.
-	 * @param markaModel
+	 * @param markaModel model i marka koji se traze
 	 * @throws java.lang.RuntimeException ako je unet
 	 * <ul>
 	 * <li> Null String </li> 
@@ -61,7 +61,7 @@ public class AutoGuma {
 	
 	/**
 	 * Postavlja novu vrednost za precnik gume.
-	 * @param precnik
+	 * @param precnik precnik gume
 	 * @throws java.lang.RuntimeException ako je
 	 * unet 
 	 * <ul>
@@ -85,7 +85,7 @@ public class AutoGuma {
 	
 	/**
 	 * Postavlja novu vrednost atributa sirina.
-	 * @param sirina
+	 * @param sirina sirina gume
 	 * @throws java.lang.RuntimeException ako je 
 	 * uneta sirina manja od 135 ili veca od 355
 	 * <ul>
@@ -109,7 +109,7 @@ public class AutoGuma {
 	
 	/**
 	 * Postavlja novu vrednost atributa visina.
-	 * @param visina
+	 * @param visina visina gume
 	 * @throws java.lang.RuntimeException ako je 
 	 * uneta
 	 * <ul>
