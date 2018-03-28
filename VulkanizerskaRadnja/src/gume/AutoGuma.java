@@ -122,13 +122,22 @@ public class AutoGuma {
 			throw new RuntimeException("Visina van opsega");
 		this.visina = visina;
 	}
-
+	/**
+	 * Vraca String sa svim informacijama o atributima klase AutoGuma
+	 */
 	@Override
 	public String toString() {
 		return "AutoGuma [markaModel=" + markaModel + ", precnik=" + precnik + ", sirina=" + sirina + ", visina="
 				+ visina + "]";
 	}
 
+	
+	/**
+	 * Poredi da li je uneti objekat tipa AutoGuma
+	 * @param obj objekat sa kojim poredimo
+	 * @return da li su objekti jednaki
+	 * 
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

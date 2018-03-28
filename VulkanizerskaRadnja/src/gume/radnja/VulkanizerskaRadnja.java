@@ -19,11 +19,8 @@ public class VulkanizerskaRadnja {
 	/**
 	 * Metoda koja dodaje novu gumu u listu guma
 	 * @param a nova guma koja se dodaje u listu guma
-	 * @throws java.lang.RuntimeException ako
-	 * <ul>
-	 * <li> je uneta guma null </li>
-	 * <li> uneta guma vec postoji u listi </li>
-	 * </ul>
+	 * @throws java.lang.RuntimeException ako uneta guma vec postoji
+	 * @throws java.lang.NullPointerException ako je uneta guma null
 	 */
 	public void dodajGumu(AutoGuma a) {
 		if (a == null)
